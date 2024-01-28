@@ -34,7 +34,13 @@ function App() {
   }, []);
 
     useEffect(() => {
-        console.log("ON")
+        const id = displaydata.id
+        console.log(id)
+        for(let i = 0; i < emailList.length; i ++){
+            if(id !== emailList[i].id){
+                emailList[i].active = "false"
+            }
+        }
     }, [displaydata]);
 
   return (
