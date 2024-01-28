@@ -22,26 +22,19 @@ function App() {
   const [emailList, setEmails] = useState([])
   const [displaydata, setDisplay] = useState(place_holder)
 
+
   useEffect(() => {
     const fetchEmails = async () => {
       const response = await axios(
           'https://gist.githubusercontent.com/mrchenliang/15e1989583fd6e6e04e1c49287934c91/raw/ed03cfea1e2edb0303543d2908cd7429ed75580d/email.json'
       );
-      setEmails(response.data);
 
+      setEmails(response.data);
     }
     fetchEmails()
   }, []);
 
-    useEffect(() => {
-        const id = displaydata.id
-        console.log(id)
-        for(let i = 0; i < emailList.length; i ++){
-            if(id !== emailList[i].id){
-                emailList[i].active = "false"
-            }
-        }
-    }, [displaydata]);
+
 
   return (
     <div className="App">

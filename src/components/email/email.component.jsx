@@ -2,36 +2,19 @@ import React, {useEffect, useState} from "react";
 
 import './email.component.css'
 
-const Email = ({ email, set_displayed_mail}) => {
-    let {id, from, address, time, message, subject, tag, read, active} = email
-    const [colour, setColour] = useState("white")
-    const [background_colour, setBackgroundColour] = useState("white")
+const Email = ({ email, set_displayed_mail, setClickedID, active_state}) => {
+    let {id, from, address, time, message, subject, tag, read} = email
 
-    useEffect(() => {
-        const setNewColours = () => {
-            if (active === "true") {
-                setBackgroundColour("blue")
-                setColour("white")
-        } else if (read === "true") {
-                setBackgroundColour("grey")
-                setColour("black")
-            } else {
-                setBackgroundColour("white")
-                setColour("black")
-         }
-
-        }
-        setNewColours()
-
-    }, [active]);
     const clicked_mail = () => {
-        email.active = "true"
         email.read = "true"
+        read = "true"
+        setClickedID(id)
         set_displayed_mail(email)
     }
 
     return (
-        <div className="email" onClick={clicked_mail} style={{color: colour, backgroundColor: background_colour}}>
+        <div className={active_state}
+             onClick={clicked_mail}>
             <h2>{from}</h2>
             <h3>{subject}</h3>
             <p>{address}</p>

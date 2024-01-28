@@ -6,6 +6,20 @@
     margin-bottom: 10px;
     margin-top: 10px;
     text-align: center;
+}
 
+.true {
+    color: black;
+    background-color: grey;
+}
 
+.false {
+    color: black;
+    background-color: white;
+
+}
+
+.active {
+    color: white;
+    background-color: blue;
 }
