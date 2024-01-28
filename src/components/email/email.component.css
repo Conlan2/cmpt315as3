@@ -1,0 +1,8 @@
+.email {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
