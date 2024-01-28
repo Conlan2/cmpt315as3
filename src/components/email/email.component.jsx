@@ -15,10 +15,13 @@ const Email = ({ email, set_displayed_mail, setClickedID, active_state}) => {
     return (
         <div className={active_state}
              onClick={clicked_mail}>
-            <h2>{from}</h2>
-            <h3>{subject}</h3>
-            <p>{address}</p>
-            <p>{time}</p>
+            <h2 className="from">From: {from}</h2>
+            <h3 className="subject">Subject: {subject}</h3>
+            <div className="lower_grid">
+                <p className="address">{address}</p>
+                <p className="time">{time}</p>
+            </div>
+
 
         </div>
     )

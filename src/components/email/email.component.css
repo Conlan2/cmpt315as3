@@ -2,10 +2,8 @@
     border-width: 2px;
     border-color: black;
     border-style: solid;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    text-align: center;
+    height: 70px;
+    text-align: left;
 }
 
 .true {
@@ -18,8 +16,34 @@
     background-color: white;
 
 }
-
 .active {
     color: white;
     background-color: blue;
+}
+
+.from {
+    display: inline-grid;
+    margin: 0;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.subject {
+    display: inline-grid;
+    margin: 0;
+    font-size: 16px;
+}
+
+.lower_gird {
+    display: grid;
+}
+
+.address {
+    display: inline-grid;
+    margin-right: 10px;
+}
+
+.time {
+    display: inline-grid;
+
 }
