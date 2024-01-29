@@ -8,12 +8,16 @@ const EmailDisplay = ({ email_content}) => {
 
     return (
     <div className = "email_display" >
-        <h1>{subject}</h1>
-        <h2>{from}</h2>
-        <h3>{tag}</h3>
-        <p>{message}</p>
-        <p>{time}</p>
-        <p>{address}</p>
+        <div className="top_content">
+            <h1 className="subject_display">{subject}</h1>
+            <h2 className="from_display">From: {from}</h2>
+        </div>
+
+        <p className="message">{message}</p>
+        <div className="bottom_content">
+            <p className="time">{time}</p>
+            <p className="address">{address}</p>
+        </div>
     </div>
     )
 

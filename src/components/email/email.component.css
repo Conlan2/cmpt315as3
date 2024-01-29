@@ -2,13 +2,16 @@
     border-width: 2px;
     border-color: black;
     border-style: solid;
+    border-radius: 15px;
     height: 70px;
     text-align: left;
+    padding-top: 5px;
+    margin-top: 2px;
 }
 
 .true {
     color: black;
-    background-color: grey;
+    background-color: lightgray;
 }
 
 .false {
@@ -18,14 +21,14 @@
 }
 .active {
     color: white;
-    background-color: blue;
+    background-color: darkcyan;
 }
 
 .from {
     display: inline-grid;
-    margin: 0;
-    margin-right: 10px;
     font-size: 18px;
+    margin: 0 10px;
+
 }
 
 .subject {

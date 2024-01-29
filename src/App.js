@@ -8,10 +8,10 @@ import axios from "axios";
 
 const place_holder = {
     "id": "0",
-    "from": "",
+    "from": "Select an email to read the contents",
     "address": "",
     "time": "",
-    "message": "Select an email to read the contents",
+    "message": "",
     "subject": "",
     "tag": "",
     "read": ""
