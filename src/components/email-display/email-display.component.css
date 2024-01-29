@@ -5,10 +5,10 @@
     border-radius: 30px;
     padding: 5px;
     display: inline-grid;
-    height: 600px;
     width: 900px;
     margin-left: 10px;
     background-color: white;
+    height: fit-content;
 
 }
 .top_content {
@@ -32,7 +32,8 @@
     height: 45px;
 }
 .from_display {
-    background-color: white;
+    background-color: #004b4b;
+    color: white;
     display: inline-grid;
     margin: 10px;
     width: fit-content;
@@ -41,24 +42,42 @@
 
 }
 
-.bottom_content {
-    display: grid;
-}
 
-.address {
-    display: inline-grid;
-    margin-right: 10px;
-    margin-left: 10px;
 
-}
+
 
 .message {
-    margin-left: 10px;
+    background-color: lightgray;
+    border-radius: 30px;
+    padding: 25px;
 }
 
-.time {
-    display: inline-grid;
+.bottom_content {
+    display: block;
+    justify-content: center;
+    background-color: darkcyan;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    padding: 0;
+    width: fit-content;
+}
+.address_display {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 17px;
+    border-radius: 10px;
+    padding: 0 8px;
+    background-color: #004b4b;
+}
+.time_display {
+    display: inline-block;
     margin-left: 10px;
+    border-radius: 10px;
+    padding: 0 8px;
+    background-color: #004b4b;
+    margin-right: 15px;
 
 
 }
+

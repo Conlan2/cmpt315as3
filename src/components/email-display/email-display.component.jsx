@@ -10,13 +10,13 @@ const EmailDisplay = ({ email_content}) => {
     <div className = "email_display" >
         <div className="top_content">
             <h1 className="subject_display">{subject}</h1>
-            <h2 className="from_display">From: {from}</h2>
+            <h2 className="from_display">{from}</h2>
         </div>
 
         <p className="message">{message}</p>
         <div className="bottom_content">
-            <p className="time">{time}</p>
-            <p className="address">{address}</p>
+            <p className="address_display">{address}</p>
+            <p className="time_display">{time}</p>
         </div>
     </div>
     )
