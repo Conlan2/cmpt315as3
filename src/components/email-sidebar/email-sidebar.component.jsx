@@ -8,6 +8,7 @@ const EmailSidebar = ({ emails, set_displayed}) => {
     const [states, setStates] = useState({})
     const [clickId, setClickedID] = useState("0")
 
+
     useEffect(() => {
         const tempState = {}
         for(let i = 0; i < emails.length; i++){
@@ -16,6 +17,8 @@ const EmailSidebar = ({ emails, set_displayed}) => {
         setStates(tempState)
     }, [emails]);
 
+    // Sets the new active email when a new email is clicked, which sets the click
+    // ID to the ID of the email
     useEffect(() => {
         const temp_states = {...states}
         for(let i = 0; i < emails.length; i++){
@@ -24,9 +27,6 @@ const EmailSidebar = ({ emails, set_displayed}) => {
         temp_states[clickId] = "email active"
         setStates(temp_states)
     }, [clickId]);
-
-
-
 
     return (
         <div className="email_sidebar">

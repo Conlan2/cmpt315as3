@@ -5,6 +5,7 @@ import './email.component.css'
 const Email = ({ email, set_displayed_mail, setClickedID, active_state}) => {
     let {id, from, address, time, message, subject, tag, read} = email
 
+    // Sets the email to the display when clicked
     const clicked_mail = () => {
         email.read = "true"
         read = "true"

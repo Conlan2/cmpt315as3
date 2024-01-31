@@ -6,6 +6,7 @@ import EmailDisplay from "./components/email-display/email-display.component";
 import {useEffect, useState} from "react";
 import axios from "axios";
 
+// Empty Placeholder for the email display before any are selected
 const place_holder = {
     "id": "0",
     "from": "Select an email to read the contents",
@@ -18,11 +19,10 @@ const place_holder = {
 
 }
 function App() {
-  let on_load = true
-  const [emailList, setEmails] = useState([])
+    const [emailList, setEmails] = useState([])
   const [displaydata, setDisplay] = useState(place_holder)
 
-
+    //Retrieves emails from gist
   useEffect(() => {
     const fetchEmails = async () => {
       const response = await axios(
@@ -33,8 +33,6 @@ function App() {
     }
     fetchEmails()
   }, []);
-
-
 
   return (
     <div className="App">
